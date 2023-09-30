@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1 class="centered">My Playlist</h1>
+    <h2 class="centered">Now Playing...</h2>
+    <h2 class="centered">MP3 songs</h2>
+    
+    <ul>
+        <li class="no-bullet"><a href="song1.mp3" target="_blank">Song 1</a></li>
+        <li class="no-bullet"><a href="song2.mp3" target="_blank">Song 2</a></li>
+        <li class="no-bullet"><a href="song3.mp3" target="_blank">Song 3</a></li>
+        <li class="no-bullet"><a href="song4.mp3" target="_blank">Song 4</a></li>
+        <li class="no-bullet"><a href="song5.mp3" target="_blank">Song 5</a></li>
+    </ul>
 
+    <div class="audio-player">
+        <h2>Maan Meri Jaan</h2>
+        <audio controls>
+            <source src="audio/song.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="video-player">
+        <video controls>
+            <source src="video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
